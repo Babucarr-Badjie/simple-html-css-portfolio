@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* customer style properties */
+:root {
+  --primary-font: "Source Sans Pro", "sans-serif";
+  --secondary-font: "Source Code Pro", "monospace";
+
+  --regular-font-weight: 300;
+  --bold-font-weight: 900;
+
+  --light-color: #fff;
+  --dark-color: #303030;
+  --accent-color: #16e0bd;
+
+  --h1-fontSize: 3rem;
+  --h2-fontSize: 2.25rem;
+  --h3-fontSize: 1.25rem;
+  --body-fontSize: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --h1-fontSize: 4.5rem;
+    --h2-fontSize: 3.75rem;
+    --h3-fontSize: 1.5rem;
+    --body-fontSize: 1.125rem;
+  }
+}
+
+/* General styles */
+body {
+  background: var(--light-color);
+  color: var(--dark-color);
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: var(--body-fontSize);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--h1-fontSize);
+}
+h2 {
+  font-size: var(--h2-fontSize);
+}
+h3 {
+  font-size: var(--h3-fontSize);
+}

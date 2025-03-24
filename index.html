@@ -17,6 +17,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -28,12 +36,108 @@
       </button>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">My Service</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About me</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">My work</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">My Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item"><a href="#work" class="nav-link">My work</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Introduction section -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">
+        Hi, I am <strong>Babucarr</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">Front-end developer</p>
+      <img src="img/image1.JPG" alt="bax profile picture" />
+    </section>
+
+    <!-- My services section-->
+    <section class="my-services" id="servies">
+      <h2 class="section-title section-title-services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design and Development</h3>
+          <p>
+            I’m a passionate designer and developer who creates engaging,
+            user-friendly experiences. With a blend of creativity and technical
+            skills, I craft innovative solutions that bring ideas to life.
+          </p>
+        </div>
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>
+            I specialize in e-commerce design and development, creating
+            seamless, user-friendly online shopping experiences. With a focus on
+            functionality and aesthetics, I help businesses grow through
+            innovative digital solutions.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Responsive Web Design</h3>
+          <p>
+            I create responsive websites that adapt seamlessly to any device,
+            ensuring an optimal user experience. My designs prioritize
+            accessibility, performance, and aesthetics for a smooth and engaging
+            web experience.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="button">My work</a>
+    </section>
+
+    <!-- About me section -->
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about"></p>
+      <div class="about-me-body">
+        <p></p>
+        <p></p>
+      </div>
+      <img src="img/image2.jpg" alt="bax chilling" />
+    </section>
+
+    <!-- My work section -->
+    <section class="my-work" id="work">
+      <h2 class="section-title section-title-work">My work</h2>
+      <p class="section-subtitle"></p>
+      <div class="portfolio">
+        <!-- portfolio item 1 -->
+        <a href="#" class="portfolio-item">
+          <img src="img/image3.jpg" alt="" />
+        </a>
+
+        <!-- portfolio item 1 -->
+        <a href="#" class="portfolio-item">
+          <img src="img/image4.JPG" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <a href="badjie:hello@bax.dev" class="footer-link">hello@bax.dev</a>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="#" class="social-list-link">LinkedIn</a>
+        </li>
+        <li class="social-list-item">
+          <a href="#" class="social-list-link">Github</a>
+
+          <a href="#" class="social-list-link">Instagram</a>
+        </li>
+        <li class="social-list-item">
+          <a href="#" class="social-list-link">Facebook</a>
+        </li>
+        <li class="social-list-item">
+          <a href="#" class="social-list-link">Instagram</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
