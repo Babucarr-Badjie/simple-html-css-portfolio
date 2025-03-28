@@ -208,3 +208,9 @@ nav {
     margin-left: 2em;
   }
 }
+
+/* About me */
+.about-me {
+  min-width: 1000px;
+  margin: 0 auto;
+}
