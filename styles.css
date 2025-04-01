@@ -211,8 +211,42 @@ nav {
 
 /* About me */
 .about-me {
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+.about-me-img {
+  box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title image"
+      "subtitle image"
+      "text image";
+    grid-column-gap: 2em;
+    max-width: 100%;
+  }
+  .section-title-about {
+    grid-area: title;
+  }
+  .section-subtitle-about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me-img {
+    grid-area: image;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 /* My work  */
